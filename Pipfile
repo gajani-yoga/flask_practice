@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+python-dotenv = "*"
+flask-cors = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+test = "pytest ."
+coverage = "pytest --cov-report term-missing --cov=."
